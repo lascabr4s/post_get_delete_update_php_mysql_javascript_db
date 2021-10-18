@@ -16,7 +16,7 @@ require('./connect.php');
     }
     $sql = 'UPDATE coursphp.identite SET nom=:nom, prenom=:prenom, adresse=:adresse, telephone=:telephone WHERE id=:cle';//<-- ce sont des marqueurs EN :
     $request = $bdd->prepare($sql);//prepare la liaison(bind) entre les marqueurs et les données
-    $request->bindValue(':cle',$decoded->cle);
+    $request->bindValue(':id',$decoded->cle);
     $request->bindValue(':nom',$decoded->nom);
     $request->bindValue(':prenom',$decoded->prenom);//bindValue -> lier les données
     $request->bindValue(':adresse',$decoded->adresse);
