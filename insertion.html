@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./insertion.js" async></script>
+    <title>formulaire pour exo php</title>
+</head>
+
+<body>
+    <!-- <form action="./formrecep.php" method="post"> -->
+
+    <label for="nom">Nom : </label>
+    <input type="text" name="nom" id="nom">
+    <label for="prenom">Prénom : </label>
+    <input type="text" name="prenom" id="prenom">
+    <label for="adresse">Adresse : </label>
+    <input type="text" name="adresse" id="adr">
+    <label for="telephone">Tel : </label>
+    <input pattern="[0-9]" maxlength="10" type="tel" name="telephone" id="tel">
+    <button id="btnValider" type="button" style="margin-top: 20px;background-color: blue;color: white;">VALIDER</button>
+    <!-- le span receptionne le msg -> tout c'est bien passé -->
+    <span id="response"></span>
+
+    <!-- </form> -->
+</body>
+
+</html>
