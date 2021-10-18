@@ -80,7 +80,7 @@
             .catch(error => failure(error));
 
         document.querySelector('#btnValider').addEventListener('click', function() {
-            updateValid(id); // on appelle la fonction pour envoyer les infos modifiees
+            updateValid(id.key); // on appelle la fonction pour envoyer les infos modifiees
         });
         ////////////////////////////////////////////////
         function updatePopup(response) { // on recupere l'obj en parametre reçu du php
